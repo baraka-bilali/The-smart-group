@@ -1,0 +1,105 @@
+@import "colors.scss";
+@import "responsive.scss";
+
+/*
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+
+*/ 
+.competance{
+    background-color: rgb(229, 236, 234);
+    padding-top: 70px;
+    padding-bottom: 130px;
+
+    & h2{
+        text-shadow: 1px 0.5px 4px rgb(0,0,0);
+        text-align: center;
+        padding: 20px 30px;
+        color: #000;
+        font-weight: bolder;
+        font-family: "Montserrat Alternates Light", sans-serif;
+        @include ipad{
+            font-size: 2rem;
+        }
+
+        @include desktop{
+            font-size: 3rem;
+        }
+    }
+    & h3{
+        
+        padding-bottom: 22px;
+        font-size: 30px;
+        font-family: "Montserrat Alternates Light", sans-serif;
+    }
+
+    
+
+    .row{
+        animation: slideInUp 1s;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
+        @include ipad{
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+        }
+    }
+
+    &__box{
+        padding: 0px 30px;
+     
+        width: 100%;
+        @include ipad{
+            width: 50%;
+        }
+        
+        @include desktop{
+            width: 30%;
+        }
+    }
+
+    
+    &__box i{
+        font-size: 30px;
+        color: #fff;
+        @include ipad{
+            font-size: 40px;
+        }
+    }
+
+    &__box--icon{
+        background: $color;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include ipad{
+            height: 90px;
+            width: 90px;
+        }
+
+
+    }
+
+    &__box--content{
+        word-spacing: 5px;
+        line-height: 20px;
+        font-family: "Montserrat Alternates Light", sans-serif;
+        font-weight: 600;
+
+    }
+}
+
+

@@ -1,0 +1,125 @@
+@import "responsive.scss";
+
+
+
+.about{
+    background-color: #fff;
+    @include ipad{
+        padding:  150px 0px;
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        @include ipad{
+            flex-direction: row;
+        }
+    }
+
+    &__row--left{
+        width: 100%;
+        text-align: center;
+        
+        & img{
+            width: 100%;
+        }
+
+        @include ipad{
+            width: 30%;
+            display: flex;
+        }
+    }
+
+    &__row--right{
+        width: 100%;
+        padding: 0px 12px;
+        text-align: left;
+
+        & p{
+            letter-spacing: 2px;
+            line-height: 25px;
+            text-align: justify;
+
+            @include ipad{
+            letter-spacing: 1px;
+            line-height: 30px;
+            }
+        }
+
+        
+
+        & h1{
+            padding-bottom: 30px;
+            color: #000;
+            @include ipad{
+                font-size: 2rem;
+            }
+            @include desktop{
+                font-size: 3rem;
+            }
+        }
+        @include ipad{
+            width: 60%;
+        }
+    }
+
+}
+
+/*Part 2*/
+
+.link{
+
+    padding: 30px 30px;
+
+    a{
+        color: #000;
+        text-decoration: none;
+        transition: color .4s;
+        font-size: 25px;
+    }
+
+    a:hover{
+        color: $color;
+        text-decoration: none;
+        transform: translateX(100px);
+        
+    }
+}
+
+.about{
+
+    & h2{
+        margin-left: 20px;
+        font-size: 2rem;
+    }
+    &--right{
+        & p{
+            line-height: 30px;
+            text-align: justify;
+        }
+    }
+
+    &--left{
+       margin-left: 20px;
+
+       & img{
+        @include ipad{
+            display: none;
+        }
+
+        @include desk{
+            display: block;
+        }
+
+        
+       }
+    }
+}
+
+.fullwidth{
+    width: 100%;
+    
+}

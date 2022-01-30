@@ -1,0 +1,14 @@
+@import "../Components/responsive.scss";
+@import "../Components/color.scss";
+
+
+.equipe{
+    
+    &__box{
+        background-color: aqua;
+        width: 200px;
+        height: 400px;
+        margin: 12px;
+        text-align: center;
+    }
+}

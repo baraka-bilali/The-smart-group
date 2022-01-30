@@ -1,0 +1,83 @@
+@import "colors.scss";
+@import "navigation.scss";
+@import "about.scss";
+@import "competence.scss";
+@import "service.scss";
+@import "contact.scss";
+@import "tarif.scss";
+
+
+@font-face{
+    font-family: "Montserrat Alternates Light";
+    src: url('../Fonts/Police/MontserratAlternates-Light.otf');
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body, html{
+    font-family: sans-serif;
+}
+
+.btn{
+    display: inline-block;
+    background: transparent;
+    color:$color;
+    border: 1px solid $color;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.7rem 1.7rem;
+    transition: all .3s;
+    margin: 12px 0;
+    animation: fadeInUp 1s;
+
+    a{
+        text-decoration: none;
+        color:$color;
+        font-size: 17px;
+    }
+    
+}
+
+.white{
+    border: 1px solid #fff !important;
+    color: #fff;
+}
+
+
+
+.btn:hover{
+    background-color: $color;
+    a{
+        color: #fff;
+        
+    }
+}
+
+.footer{
+    background-color: #000;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p{
+        color: #fff;
+        font-size: 13px;
+        
+    }
+
+    & span{
+        font-style: italic;
+    }
+}
+
+nav.sticky{
+    background: #000;
+}

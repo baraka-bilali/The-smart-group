@@ -1,0 +1,48 @@
+@mixin iphone {
+    @media only screen and (max-width:700px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width:1400px){
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media only screen and (max-width:900px){
+        @content;
+    }
+}
+
+@mixin tablettemin {
+    @media only screen and (min-width: 713px) {
+        @content;
+    }
+    
+}
+
+@mixin android {
+    @media only screen and (max-width:500px){
+        @content;
+    }
+}
+
+@mixin tablettes {
+    @media only screen and (min-width:100px){
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media only screen and (min-width:760px){
+        @content;
+    }
+}
+
+@mixin desk {
+    @media only screen and (min-width:1300px){
+        @content;
+    }
+}

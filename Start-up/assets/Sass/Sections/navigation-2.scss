@@ -1,0 +1,133 @@
+@import "../Components/responsive.scss";
+@import "../Components/color.scss";
+
+.header{
+    &__topbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5vw;
+        height: 70px;
+        align-items: center;
+        background-color: #fff;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.2);
+       
+ 
+        &--logo{
+            font-size: 10px;
+            text-shadow: 0.3px 0.3px rgb(156, 151, 151);
+            & span{
+                font-family: 'Juliette Garden';
+                font-size: 28px;
+                font-weight: bold;
+            }
+ 
+        }
+        & .fa-bars,  .fa-times{
+            display: none;
+            cursor: pointer;
+            font-size: 22px;
+            @include tablet{
+             display: block;
+            }
+        }
+ 
+        & .fa-times{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: #fff;
+        }
+    }
+ 
+    &__topbar--links{
+        display: flex;
+        @include tablet{
+         width: 200px;
+         height: 100vh;
+         position: fixed;
+         top: 0;
+         left: -200px;
+         z-index: 2;
+         flex-direction: column;
+         transition: .6s;
+         background: rgba(0,0,0, 0.95);
+         
+ 
+        }
+    }
+ 
+    &__topbar--links li{
+         margin: 0 20px;
+
+     @include tablet-max{
+         margin: 0 6px;
+
+     }
+    
+     @include tablet{
+        margin: 40px 0px 0px 40px;
+        }
+
+     
+     
+    }
+
+    &__topbar--links li::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: $color;
+        display: block;
+        margin: auto;
+        transition: all .2s;
+    }
+
+    &__topbar--links li:hover::after, &__topbar--links .actived::after{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $color;
+        display: block;
+        margin: auto;
+
+        @include iphone{
+            width: 0;
+            margin-left: 2px;
+            
+        }
+    }
+ 
+    &__topbar--links li a{
+
+     text-decoration: none;
+     color: grey;
+     transition: color .3s;
+
+     @include tablet{
+        font-size: 12px;
+     }
+     @include tablet{
+        color: #fff;
+       
+ 
+        }
+ 
+         &:hover, &.actived{
+             
+             @include tablet{
+                 color: $color;
+          
+                 }
+         }
+    }
+}
+
+nav.sticky{
+    position: fixed;
+    transition: margin-right 2s .5s;
+   
+}

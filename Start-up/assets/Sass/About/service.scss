@@ -1,0 +1,59 @@
+@import "colors.scss";
+@import "responsive.scss";
+
+.service{
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 130px;
+
+    & h2{
+        text-shadow: 1px 0.5px 4px rgb(82, 80, 80);
+        text-align: center;
+        padding: 20px 30px;
+        color: #000;
+        font-weight: bolder;
+        font-family: "Montserrat Alternates Light", sans-serif;
+        margin-bottom: 100px;
+        @include ipad{
+            font-size: 30px;
+        }
+
+        @include desktop{
+            font-size: 3rem;
+        }
+
+        @include tablettes{
+            margin-bottom: 20px;
+        }
+    }
+
+    &__right{
+        margin: 12px 20px;
+    }
+    &__right h3{
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    &__right p{
+        font-size: 17px;
+        color: rgb(51, 50, 50);
+        line-height: 40px;
+
+        @include desktop{
+            font-size: 20px;
+        }
+        
+    }
+
+
+    &__left{
+        margin: 12px 20px;
+    }
+
+
+    & span{
+        color: $color;
+        font-family: "Montserrat Alternates Light", sans-serif;
+    }
+}

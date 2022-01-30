@@ -1,0 +1,179 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/* Mobile */
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 10px;
+}
+
+.col-1-smart {
+  grid-column: span 1;
+}
+
+.col-2-smart {
+  grid-column: span 2;
+}
+
+.col-3-smart {
+  grid-column: span 3;
+}
+
+.col-4-smart {
+  grid-column: span 4;
+}
+
+.col-5-smart {
+  grid-column: span 5;
+}
+
+.col-6-smart {
+  grid-column: span 6;
+}
+
+.col-7-smart {
+  grid-column: span 7;
+}
+
+.col-8-smart {
+  grid-column: span 8;
+}
+
+.col-9-smart {
+  grid-column: span 9;
+}
+
+.col-10-smart {
+  grid-column: span 10;
+}
+
+.col-11-smart {
+  grid-column: span 11;
+}
+
+.col-12-smart {
+  grid-column: span 12;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1-tablet {
+    grid-column: span 1;
+  }
+  .col-2-tablet {
+    grid-column: span 2;
+  }
+  .col-3-tablet {
+    grid-column: span 3;
+  }
+  .col-4-tablet {
+    grid-column: span 4;
+  }
+  .col-5-tablet {
+    grid-column: span 5;
+  }
+  .col-6-tablet {
+    grid-column: span 6;
+  }
+  .col-7-tablet {
+    grid-column: span 7;
+  }
+  .col-8-tablet {
+    grid-column: span 8;
+  }
+  .col-9-tablet {
+    grid-column: span 9;
+  }
+  .col-10-tablet {
+    grid-column: span 10;
+  }
+  .col-11-tablet {
+    grid-column: span 11;
+  }
+  .col-12-tablet {
+    grid-column: span 12;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col-1-desktop {
+    grid-column: span 1;
+  }
+  .col-2-desktop {
+    grid-column: span 2;
+  }
+  .col-3-desktop {
+    grid-column: span 3;
+  }
+  .col-4-desktop {
+    grid-column: span 4;
+  }
+  .col-5-desktop {
+    grid-column: span 5;
+  }
+  .col-6-desktop {
+    grid-column: span 6;
+  }
+  .col-7-desktop {
+    grid-column: span 7;
+  }
+  .col-8-desktop {
+    grid-column: span 8;
+  }
+  .col-9-desktop {
+    grid-column: span 9;
+  }
+  .col-10-desktop {
+    grid-column: span 10;
+  }
+  .col-11-desktop {
+    grid-column: span 11;
+  }
+  .col-12-desktop {
+    grid-column: span 12;
+  }
+}
+/*# sourceMappingURL=becker.css.map */
